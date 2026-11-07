@@ -1,0 +1,23 @@
+<!-- earthquake-map.html -->
+
+@if (isLoading()) {
+  <div class="overlay">
+    <div class="loading-card">
+      <div class="spinner"></div>
+      <p>Fetching earthquake data…</p>
+    </div>
+  </div>
+}
+
+@if (hasError()) {
+  <div class="overlay">
+    <div class="error-card">
+      <span class="error-icon">⚠️</span>
+      <p>Something went wrong</p>
+      <p class="error-detail">{{ errorMessage() }}</p>
+    </div>
+  </div>
+}
+
+<!-- The map container — Leaflet attaches to this div by its id -->
+<div id="map"></div>

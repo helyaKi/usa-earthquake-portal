@@ -1,0 +1,78 @@
+/* app.css */
+
+:host {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.header > * {
+  pointer-events: auto;
+}
+
+.header-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.header-title-row i {
+  font-size: 1.35rem;
+  color: #4ade80;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.85));
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-weight: 700;
+  color: #f3f4f6;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.9),
+    0 0 12px rgba(0, 0, 0, 0.7);
+}
+
+.header p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
+.header p span {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+app-earthquake-map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

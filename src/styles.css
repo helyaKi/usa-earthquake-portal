@@ -1,0 +1,56 @@
+:root {
+  --bg: #0b1020;
+  --surface: #151b2e;
+  --text: #e6e9f2;
+  --accent: #4ade80;
+  --radius-md: 14px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: radial-gradient(circle at top left, #16213e, var(--bg));
+  color: var(--text);
+  font-family:
+    'Segoe UI',
+    system-ui,
+    -apple-system,
+    Roboto,
+    sans-serif;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #9ca3af !important;
+  font-size: 0.75rem !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95);
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 0.5rem 0.5rem 0 !important;
+  margin: 0 !important;
+}
+
+.leaflet-container .leaflet-control-attribution a {
+  color: #4ade80 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.leaflet-container .leaflet-control-attribution a:hover {
+  text-decoration: underline !important;
+  color: #86efac !important;
+}
+
+.leaflet-container .leaflet-control-attribution .leaflet-attribution-flag {
+  display: none !important;
+}
